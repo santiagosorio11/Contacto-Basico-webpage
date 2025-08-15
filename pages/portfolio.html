@@ -5,19 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto Basico - Portfolio</title>
     <link rel="icon" href="../assets/logo.png" type="image/png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="main-header"></header>
+    <header class="main-header">
+        <a href="../index.html" class="logo-link">
+            <img src="../assets/logo.png" alt="Básico Model Management Logo" class="logo">
+        </a>
+        <nav class="main-nav">
+            <a href="women.html" data-translate="nav_women">Women</a>
+            <a href="men.html" data-translate="nav_men">Men</a>
+            <a href="about-us.html" data-translate="nav_about_us">About Us</a>
+            <a href="events.html" data-translate="nav_events">Events</a>
+            <a href="become-a-model.html" data-translate="nav_become_a_model">Become a Model</a>
+            <a href="contact-us.html" data-translate="nav_contact_us">Contact Us</a>
+        </nav>
+        <div class="language-toggle">
+            <button id="lang-en" class="active">EN</button>
+            <button id="lang-es">ES</button>
+        </div>
+    </header>
 
     <main id="portfolio-main" class="portfolio-main">
-        <div class="loader"></div>
+        <img src="../Long-logo.png" alt="Contacto Basico Logo" class="site-title-logo">
+        <h1 class="modelNameBook"></h1>
+        <div class="carousel-container">
+            <div class="carousel-images"></div>
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
+        </div>
+        <div class="model-details-container">
+            <h2>Details</h2>
+            <ul class="modelBookMeasurements"></ul>
+        </div>
     </main>
 
-    <footer class="site-footer"></footer>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3 data-translate="footer_social">Social</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-translate="footer_legal">Legal</h3>
+                <ul>
+                    <li><a href="#" data-translate="footer_privacy">Privacy & Cookies Policy</a></li>
+                    <li><a href="#" data-translate="footer_terms">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-translate="footer_contact">Contact</h3>
+                <ul>
+                    <li><a href="contact-us.html" data-translate="nav_contact_us">Contact Us</a></li>
+                    <li><a href="become-a-model.html" data-translate="nav_become_a_model">Become a Model</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-translate="footer_about">About</h3>
+                <ul>
+                    <li><a href="about-us.html" data-translate="nav_about_us">About Us</a></li>
+                    <li><a href="events.html" data-translate="nav_events">Events</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Contacto Basico. All rights reserved.</p>
+        </div>
+    </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

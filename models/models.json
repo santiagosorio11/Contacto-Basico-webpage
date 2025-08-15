@@ -1,168 +1,247 @@
 {
-    "models": [
-      {
-        "id": "5283",
-        "name": "Alina Kovalenko",
-        "category": "women",
-        "thumbnailUrl": "https://images.pexels.com/photos/3772510/pexels-photo-3772510.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "portfolioImages": [
-          "https://images.pexels.com/photos/3772509/pexels-photo-3772509.jpeg?auto=compress&cs=tinysrgb&w=1260",
-          "https://images.pexels.com/photos/3772506/pexels-photo-3772506.jpeg?auto=compress&cs=tinysrgb&w=1260",
-          "https://images.pexels.com/photos/3772502/pexels-photo-3772502.jpeg?auto=compress&cs=tinysrgb&w=1260"
-        ],
-        "polaroidImages": [
-          "https://images.pexels.com/photos/3772510/pexels-photo-3772510.jpeg?auto=compress&cs=tinysrgb&w=800",
-          "https://images.pexels.com/photos/3772511/pexels-photo-3772511.jpeg?auto=compress&cs=tinysrgb&w=800"
-        ],
-        "videos": [],
-        "runways": [],
-        "details": {
-          "Height": "178 cm",
-          "Bust": "82 cm",
-          "Waist": "60 cm",
-          "Hips": "89 cm",
-          "Shoes": "39 EU",
-          "Hair": "Blonde",
-          "Eyes": "Blue"
-        }
+  "models": [
+    {
+      "id": "angela-lindvall",
+      "name": "ANGELA LINDVALL",
+      "category": "women",
+      "thumbnailUrl": "../tafficmodels/women/mainboard/2783-angela-lindvall/thumbnail.jpg",
+      "details": {
+        "height": "180 cm - 5 ft 11 in",
+        "bust": "84 cm - 33 in",
+        "waist": "61 cm - 24 in",
+        "hips": "88 cm - 34½ in",
+        "shoe": "41 EU - 8 UK",
+        "hair": "Light brown",
+        "eyes": "Blue"
       },
-      {
-        "id": "5284",
-        "name": "Isabella Rossi",
-        "category": "women",
-        "thumbnailUrl": "https://images.pexels.com/photos/19402598/pexels-photo-19402598.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "portfolioImages": [
-          "https://images.pexels.com/photos/13197660/pexels-photo-13197660.jpeg?auto=compress&cs=tinysrgb&w=1260",
-          "https://images.pexels.com/photos/20261907/pexels-photo-20261907.jpeg?auto=compress&cs=tinysrgb&w=1260"
-        ],
-        "polaroidImages": [],
-        "videos": [],
-        "runways": [],
-        "details": {
-          "Height": "175 cm", "Bust": "85 cm", "Waist": "62 cm", "Hips": "90 cm", "Shoes": "38 EU", "Hair": "Brown", "Eyes": "Green"
-        }
+      "portfolioImages": [
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838357-a39d3979a85b1750c807ecabc8fabff0.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838357-bd82fb2da119a58c864526d8e4e34ff3.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838357-18ff4ec1057fbeb93a0351688f6d1c8c.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838358-a35f4122f178b09fc8bff3c367eecc0c.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838358-691d5281ef052a0f79e1939377939ea5.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1710757329-aed38363e2f53d7bfdc6c6612b51e196.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1710757328-57c85559bc4ce2ec2ed7b97d58d6526b.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838359-2f2a0f909728b5e1bc1ec53809206db5.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838359-4c9a8de5f55e2625df85e6684bd2d204.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838359-460b3e9b64a393c4e44bec919d464658.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838360-24a1aa1b5e91500a88d7991dda4736dc.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838360-d8a814248769c82166d6651746e36d49.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838361-b4a0819d2424c11575bd3d303c55f265.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838361-f990deaed51bac2b8d00d5c6ba118fc6.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838361-16145771ef07fd4123d1953a07aa5559.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838362-27b81290598fc03d1fa78381623664a7.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838361-66c0dbb79c1f17d7c9db5f9a49ea4c7a.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838362-536bbeafb5a92dc50ba62ba0173fddc6.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838363-088a7c64156026eefcef96ad65700601.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838362-c2784ab350cd705252425a880d386285.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838364-7ffa214ce503766fea5753d9ca09a808.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838363-076f799759d9444c6c88fa4d02173687.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838364-ec87fa62d75c2e869ef7bd4693991f2c.jpg",
+        "https://mediaslide-europe.storage.googleapis.com/traffic/pictures/2783/2783/large-1567838364-da58195e7ad00e6399aa05e6f520669c.jpg"
+      ],
+      "polaroidImages": [],
+      "videos": [],
+      "runways": []
+    },
+    {
+      "id": "john-doe",
+      "name": "JOHN DOE",
+      "category": "men",
+      "thumbnailUrl": "https://via.placeholder.com/300x400?text=John+Doe",
+      "details": {
+        "height": "185 cm - 6 ft 1 in",
+        "bust": "95 cm - 37 in",
+        "waist": "78 cm - 31 in",
+        "hips": "92 cm - 36 in",
+        "shoe": "44 EU - 10 UK",
+        "hair": "Brown",
+        "eyes": "Brown"
       },
-      {
-        "id": "5285",
-        "name": "Chloe Nguyen",
-        "category": "women",
-        "thumbnailUrl": "https://images.pexels.com/photos/9310034/pexels-photo-9310034.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "portfolioImages": [],
-        "polaroidImages": [
-            "https://images.pexels.com/photos/9310034/pexels-photo-9310034.jpeg?auto=compress&cs=tinysrgb&w=800"
-        ],
-        "videos": [],
-        "runways": [],
-        "details": {
-          "Height": "172 cm", "Bust": "80 cm", "Waist": "59 cm", "Hips": "88 cm", "Shoes": "37.5 EU", "Hair": "Black", "Eyes": "Brown"
-        }
+      "portfolioImages": [
+        "https://via.placeholder.com/800x1200?text=John+Doe+1",
+        "https://via.placeholder.com/800x1200?text=John+Doe+2",
+        "https://via.placeholder.com/1200x800?text=John+Doe+3"
+      ],
+      "polaroidImages": [],
+      "videos": [],
+      "runways": []
+    },
+    {
+      "id": "jane-smith",
+      "name": "JANE SMITH",
+      "category": "women",
+      "thumbnailUrl": "https://via.placeholder.com/300x400?text=Jane+Smith",
+      "details": {
+        "height": "175 cm - 5 ft 9 in",
+        "bust": "82 cm - 32 in",
+        "waist": "60 cm - 23.5 in",
+        "hips": "86 cm - 34 in",
+        "shoe": "39 EU - 6 UK",
+        "hair": "Blonde",
+        "eyes": "Green"
       },
-      {
-        "id": "5286",
-        "name": "Sofia Petrova",
-        "category": "women",
-        "thumbnailUrl": "https://images.pexels.com/photos/5955375/pexels-photo-5955375.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "portfolioImages": [
-            "https://images.pexels.com/photos/5955375/pexels-photo-5955375.jpeg?auto=compress&cs=tinysrgb&w=1260"
-        ],
-        "polaroidImages": [],
-        "videos": [],
-        "runways": [],
-        "details": {
-          "Height": "180 cm", "Bust": "84 cm", "Waist": "61 cm", "Hips": "91 cm", "Shoes": "40 EU", "Hair": "Red", "Eyes": "Green"
-        }
+      "portfolioImages": [
+        "https://via.placeholder.com/800x1200?text=Jane+Smith+1",
+        "https://via.placeholder.com/800x1200?text=Jane+Smith+2"
+      ],
+      "polaroidImages": [],
+      "videos": [],
+      "runways": []
+    },
+    {
+      "id": "michael-jones",
+      "name": "MICHAEL JONES",
+      "category": "men",
+      "thumbnailUrl": "https://via.placeholder.com/300x400?text=Michael+Jones",
+      "details": {
+        "height": "188 cm - 6 ft 2 in",
+        "bust": "98 cm - 38.5 in",
+        "waist": "80 cm - 31.5 in",
+        "hips": "94 cm - 37 in",
+        "shoe": "45 EU - 10.5 UK",
+        "hair": "Black",
+        "eyes": "Brown"
       },
-      {
-        "id": "5287",
-        "name": "Aisha Khan",
-        "category": "women",
-        "thumbnailUrl": "https://images.pexels.com/photos/20343360/pexels-photo-20343360.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "portfolioImages": [
-            "https://images.pexels.com/photos/20343360/pexels-photo-20343360.jpeg?auto=compress&cs=tinysrgb&w=1260"
-        ],
-        "polaroidImages": [],
-        "videos": [],
-        "runways": [],
-        "details": {
-          "Height": "176 cm", "Bust": "86 cm", "Waist": "63 cm", "Hips": "92 cm", "Shoes": "39 EU", "Hair": "Black", "Eyes": "Brown"
-        }
+      "portfolioImages": [
+        "https://via.placeholder.com/800x1200?text=Michael+Jones+1",
+        "https://via.placeholder.com/800x1200?text=Michael+Jones+2"
+      ],
+      "polaroidImages": [],
+      "videos": [],
+      "runways": []
+    },
+    {
+      "id": "emily-white",
+      "name": "EMILY WHITE",
+      "category": "women",
+      "thumbnailUrl": "https://via.placeholder.com/300x400?text=Emily+White",
+      "details": {
+        "height": "178 cm - 5 ft 10 in",
+        "bust": "85 cm - 33.5 in",
+        "waist": "62 cm - 24.5 in",
+        "hips": "89 cm - 35 in",
+        "shoe": "40 EU - 7 UK",
+        "hair": "Red",
+        "eyes": "Blue"
       },
-      {
-        "id": "6001",
-        "name": "Liam Carter",
-        "category": "men",
-        "thumbnailUrl": "https://images.pexels.com/photos/3222421/pexels-photo-3222421.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "portfolioImages": [
-          "https://images.pexels.com/photos/3222421/pexels-photo-3222421.jpeg?auto=compress&cs=tinysrgb&w=1260"
-        ],
-        "polaroidImages": [
-            "https://images.pexels.com/photos/20127599/pexels-photo-20127599.jpeg?auto=compress&cs=tinysrgb&w=800"
-        ],
-        "videos": [],
-        "runways": [],
-        "details": {
-          "Height": "188 cm", "Suit": "40R", "Waist": "81 cm", "Shoes": "44 EU", "Hair": "Brown", "Eyes": "Blue"
-        }
+      "portfolioImages": [
+        "https://via.placeholder.com/800x1200?text=Emily+White+1",
+        "https://via.placeholder.com/800x1200?text=Emily+White+2"
+      ],
+      "polaroidImages": [],
+      "videos": [],
+      "runways": []
+    },
+    {
+      "id": "david-brown",
+      "name": "DAVID BROWN",
+      "category": "men",
+      "thumbnailUrl": "https://via.placeholder.com/300x400?text=David+Brown",
+      "details": {
+        "height": "183 cm - 6 ft 0 in",
+        "bust": "92 cm - 36 in",
+        "waist": "76 cm - 30 in",
+        "hips": "90 cm - 35.5 in",
+        "shoe": "43 EU - 9 UK",
+        "hair": "Blonde",
+        "eyes": "Blue"
       },
-      {
-        "id": "6002",
-        "name": "Noah Evans",
-        "category": "men",
-        "thumbnailUrl": "https://images.pexels.com/photos/5378700/pexels-photo-5378700.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "portfolioImages": [
-            "https://images.pexels.com/photos/5378700/pexels-photo-5378700.jpeg?auto=compress&cs=tinysrgb&w=1260"
-        ],
-        "polaroidImages": [],
-        "videos": [],
-        "runways": [],
-        "details": {
-          "Height": "190 cm", "Suit": "42L", "Waist": "84 cm", "Shoes": "45 EU", "Hair": "Blonde", "Eyes": "Green"
-        }
+      "portfolioImages": [
+        "https://via.placeholder.com/800x1200?text=David+Brown+1",
+        "https://via.placeholder.com/800x1200?text=David+Brown+2"
+      ],
+      "polaroidImages": [],
+      "videos": [],
+      "runways": []
+    },
+    {
+      "id": "olivia-green",
+      "name": "OLIVIA GREEN",
+      "category": "women",
+      "thumbnailUrl": "https://via.placeholder.com/300x400?text=Olivia+Green",
+      "details": {
+        "height": "176 cm - 5 ft 9.5 in",
+        "bust": "83 cm - 32.5 in",
+        "waist": "61 cm - 24 in",
+        "hips": "87 cm - 34 in",
+        "shoe": "38 EU - 5 UK",
+        "hair": "Brown",
+        "eyes": "Brown"
       },
-      {
-        "id": "6003",
-        "name": "Ethan James",
-        "category": "men",
-        "thumbnailUrl": "https://images.pexels.com/photos/6652932/pexels-photo-6652932.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "portfolioImages": [
-            "https://images.pexels.com/photos/6652932/pexels-photo-6652932.jpeg?auto=compress&cs=tinysrgb&w=1260"
-        ],
-        "polaroidImages": [],
-        "videos": [],
-        "runways": [],
-        "details": {
-          "Height": "185 cm", "Suit": "38R", "Waist": "79 cm", "Shoes": "43 EU", "Hair": "Black", "Eyes": "Brown"
-        }
+      "portfolioImages": [
+        "https://via.placeholder.com/800x1200?text=Olivia+Green+1",
+        "https://via.placeholder.com/800x1200?text=Olivia+Green+2"
+      ],
+      "polaroidImages": [],
+      "videos": [],
+      "runways": []
+    },
+    {
+      "id": "chris-black",
+      "name": "CHRIS BLACK",
+      "category": "men",
+      "thumbnailUrl": "https://via.placeholder.com/300x400?text=Chris+Black",
+      "details": {
+        "height": "190 cm - 6 ft 3 in",
+        "bust": "100 cm - 39.5 in",
+        "waist": "82 cm - 32 in",
+        "hips": "96 cm - 37.5 in",
+        "shoe": "46 EU - 11 UK",
+        "hair": "Brown",
+        "eyes": "Green"
       },
-      {
-        "id": "6004",
-        "name": "Mateo Garcia",
-        "category": "men",
-        "thumbnailUrl": "https://images.pexels.com/photos/20343350/pexels-photo-20343350.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "portfolioImages": [
-            "https://images.pexels.com/photos/20343350/pexels-photo-20343350.jpeg?auto=compress&cs=tinysrgb&w=1260"
-        ],
-        "polaroidImages": [],
-        "videos": [],
-        "runways": [],
-        "details": {
-          "Height": "183 cm", "Suit": "39R", "Waist": "80 cm", "Shoes": "42 EU", "Hair": "Brown", "Eyes": "Hazel"
-        }
+      "portfolioImages": [
+        "https://via.placeholder.com/800x1200?text=Chris+Black+1",
+        "https://via.placeholder.com/800x1200?text=Chris+Black+2"
+      ],
+      "polaroidImages": [],
+      "videos": [],
+      "runways": []
+    },
+    {
+      "id": "sophia-grey",
+      "name": "SOPHIA GREY",
+      "category": "women",
+      "thumbnailUrl": "https://via.placeholder.com/300x400?text=Sophia+Grey",
+      "details": {
+        "height": "177 cm - 5 ft 9.5 in",
+        "bust": "84 cm - 33 in",
+        "waist": "60 cm - 23.5 in",
+        "hips": "88 cm - 34.5 in",
+        "shoe": "39 EU - 6 UK",
+        "hair": "Black",
+        "eyes": "Brown"
       },
-      {
-        "id": "6005",
-        "name": "Kenji Tanaka",
-        "category": "men",
-        "thumbnailUrl": "https://images.pexels.com/photos/8107931/pexels-photo-8107931.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "portfolioImages": [
-            "https://images.pexels.com/photos/8107931/pexels-photo-8107931.jpeg?auto=compress&cs=tinysrgb&w=1260"
-        ],
-        "polaroidImages": [],
-        "videos": [],
-        "runways": [],
-        "details": {
-          "Height": "180 cm", "Suit": "36R", "Waist": "75 cm", "Shoes": "41 EU", "Hair": "Black", "Eyes": "Brown"
-        }
-      }
-    ]
+      "portfolioImages": [
+        "https://via.placeholder.com/800x1200?text=Sophia+Grey+1",
+        "https://via.placeholder.com/800x1200?text=Sophia+Grey+2"
+      ],
+      "polaroidImages": [],
+      "videos": [],
+      "runways": []
+    },
+    {
+      "id": "daniel-white",
+      "name": "DANIEL WHITE",
+      "category": "men",
+      "thumbnailUrl": "https://via.placeholder.com/300x400?text=Daniel+White",
+      "details": {
+        "height": "186 cm - 6 ft 1 in",
+        "bust": "96 cm - 37.5 in",
+        "waist": "79 cm - 31 in",
+        "hips": "93 cm - 36.5 in",
+        "shoe": "44 EU - 10 UK",
+        "hair": "Brown",
+        "eyes": "Blue"
+      },
+      "portfolioImages": [
+        "https://via.placeholder.com/800x1200?text=Daniel+White+1",
+        "https://via.placeholder.com/800x1200?text=Daniel+White+2"
+      ],
+      "polaroidImages": [],
+      "videos": [],
+      "runways": []
+    }
+  ]
 }

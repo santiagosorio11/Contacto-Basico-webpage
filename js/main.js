@@ -5,20 +5,32 @@ function initializeHomepage() {
     const columns = document.querySelectorAll('.mosaic-column');
     if (columns.length === 0) return;
 
-    columns.forEach(column => {
+    columns.forEach((column, colIndex) => {
+        // Apply entrance animation
+        column.classList.add('mosaic-entrance-animation');
+        column.style.animationDelay = `${0.1 * (colIndex + 1)}s`; // Staggered entrance
+
         const images = column.querySelectorAll('img');
         let currentIndex = 0;
 
+        // Initial state for domino effect
+        images.forEach((img, imgIndex) => {
+            img.style.transitionDelay = `${0.1 * imgIndex}s`; // Stagger images within column
+        });
+
+        // Set the first image as active initially
+        images[currentIndex].classList.add('active');
+
         setInterval(() => {
-            // Elimina la clase 'active' de la imagen actual
+            // Remove 'active' class from current image
             images[currentIndex].classList.remove('active');
 
-            // Calcula el índice de la siguiente imagen
+            // Calculate index of the next image
             currentIndex = (currentIndex + 1) % images.length;
 
-            // Añade la clase 'active' a la nueva imagen
+            // Add 'active' class to the new image
             images[currentIndex].classList.add('active');
-        }, 4000); // Cambia la imagen cada 4 segundos
+        }, 4000); // Change image every 4 seconds
     });
 }
 
@@ -101,115 +113,87 @@ async function loadPortfolioPage() {
         }
 
         document.title = `Contacto Basico - ${model.name}`;
-        console.log("Clearing loader...");
-        mainContainer.innerHTML = ''; // Clear loader
-        console.log("Building page structure...");
 
-        // --- Build Page Structure ---
-
-        // 1. Model Name
-        const nameWrapper = document.createElement('div');
-        nameWrapper.className = 'portfolio-name-wrapper';
-        nameWrapper.innerHTML = `<h1 class="portfolio-name">${model.name}</h1>`;
-        mainContainer.appendChild(nameWrapper);
-
-        // 2. Sub Navigation
-        const subNav = document.createElement('nav');
-        subNav.className = 'portfolio-sub-nav';
-        const sections = {
-            'PORTFOLIO': model.portfolioImages,
-            'POLAROIDS': model.polaroidImages,
-            'VIDEO': model.videos,
-            'PASARELAS': model.runways
-        };
-
-        let hasContent = false;
-        for (const sectionName in sections) {
-            if (sections[sectionName] && sections[sectionName].length > 0) {
-                hasContent = true;
-                const link = document.createElement('a');
-                link.href = '#';
-                link.textContent = sectionName;
-                link.dataset.section = sectionName.toLowerCase();
-                subNav.appendChild(link);
-            }
-        }
-        
-        if (hasContent) {
-            mainContainer.appendChild(subNav);
+        // Populate Model Name
+        const modelNameElement = document.querySelector('.modelNameBook');
+        if (modelNameElement) {
+            modelNameElement.textContent = model.name;
         }
 
-        // 3. Content Sections
-        const contentWrapper = document.createElement('div');
-        contentWrapper.className = 'portfolio-content';
-        mainContainer.appendChild(contentWrapper);
-
-        for (const sectionName in sections) {
-            if (sections[sectionName] && sections[sectionName].length > 0) {
-                const sectionDiv = document.createElement('div');
-                sectionDiv.id = `section-${sectionName.toLowerCase()}`;
-                sectionDiv.className = 'portfolio-content-section';
-                
-                let gridClass = 'portfolio-grid';
-                if (sectionName === 'VIDEO') {
-                    gridClass = 'video-grid';
-                }
-
-                const grid = document.createElement('div');
-                grid.className = gridClass;
-
-                if (sectionName === 'VIDEO') {
-                    sections[sectionName].forEach(videoUrl => {
-                        const videoContainer = document.createElement('div');
-                        videoContainer.className = 'video-container';
-                        videoContainer.innerHTML = `<iframe src="${videoUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-                        grid.appendChild(videoContainer);
-                    });
-                } else {
-                    sections[sectionName].forEach(imageUrl => {
-                        const img = document.createElement('img');
-                        img.src = imageUrl;
-                        img.alt = `${model.name} - ${sectionName}`;
-                        grid.appendChild(img);
-                    });
-                }
-                sectionDiv.appendChild(grid);
-                contentWrapper.appendChild(sectionDiv);
+        // Populate Model Measurements
+        const measurementsList = document.querySelector('.modelBookMeasurements');
+        if (measurementsList) {
+            measurementsList.innerHTML = ''; // Clear existing placeholders
+            for (const key in model.details) {
+                const measurementItem = document.createElement('div');
+                measurementItem.classList.add('measurement-item');
+                measurementItem.innerHTML = `
+                    <span class="measurementName">${key}:</span>
+                    <span class="measurements">${model.details[key]}</span>
+                `;
+                measurementsList.appendChild(measurementItem);
             }
         }
 
-        // --- Interactivity ---
-        const navLinks = subNav.querySelectorAll('a');
-        const contentSections = contentWrapper.querySelectorAll('.portfolio-content-section');
+        // Custom Carousel Implementation
+        const carouselImagesContainer = document.querySelector('.carousel-images');
+        const prevButton = document.querySelector('.carousel-button.prev');
+        const nextButton = document.querySelector('.carousel-button.next');
+        let currentImageIndex = 0;
 
-        if (navLinks.length > 0) {
-            // Set initial state
-            navLinks[0].classList.add('active');
-            contentSections[0].classList.add('active');
+        if (carouselImagesContainer && model.portfolioImages && model.portfolioImages.length > 0) {
+            carouselImagesContainer.innerHTML = ''; // Clear existing images
 
-            // Add click listeners
-            navLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    
-                    // Deactivate all
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    contentSections.forEach(s => s.classList.remove('active'));
-
-                    // Activate clicked
-                    link.classList.add('active');
-                    const sectionId = `section-${link.dataset.section}`;
-                    document.getElementById(sectionId).classList.add('active');
-                });
+            model.portfolioImages.forEach((imageUrl, index) => {
+                const img = document.createElement('img');
+                img.src = imageUrl;
+                img.alt = `${model.name} ${index + 1}`;
+                img.classList.add('carousel-image');
+                if (index === 0) {
+                    img.classList.add('active');
+                }
+                carouselImagesContainer.appendChild(img);
             });
+
+            const images = carouselImagesContainer.querySelectorAll('.carousel-image');
+
+            const showImage = (index) => {
+                images.forEach((img, i) => {
+                    img.classList.remove('active', 'prev-active', 'next-active');
+                    if (i === index) {
+                        img.classList.add('active');
+                    } else if (i === (index - 1 + images.length) % images.length) {
+                        img.classList.add('prev-active');
+                    } else if (i === (index + 1) % images.length) {
+                        img.classList.add('next-active');
+                    }
+                });
+            };
+
+            prevButton.addEventListener('click', () => {
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                showImage(currentImageIndex);
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                showImage(currentImageIndex);
+            });
+
+            showImage(currentImageIndex); // Initialize carousel display
+
+        } else if (carouselImagesContainer) {
+            carouselImagesContainer.innerHTML = '<p>No portfolio images available.</p>';
         }
+
         console.log("Portfolio page built successfully");
 
     } catch (error) {
-        mainContainer.innerHTML = '<h1>Error loading portfolio.</h1>';
+        mainContainer.innerHTML = '<h1>Error loading portfolio. Please try again later.</h1>';
         console.error('Fetch error:', error);
     }
 }
+
 
 let translations = {};
 
@@ -302,8 +286,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         loadPortfolioPage();
     } else if (page === 'events.html') { // New condition for events page
         loadEventsPage();
-    } else if (page === 'index.html' || page === '') {
-        initializeHomepage();
     }
 
     /* --- LOGICA PARA OCULTAR HEADER EN SCROLL --- */
