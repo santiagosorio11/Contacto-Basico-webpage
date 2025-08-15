@@ -28,24 +28,46 @@
     <main class="homepage-main-static">
         <h1 class="site-title" data-translate="become_a_model_title">Become a Model</h1>
         <p data-translate="become_a_model_p1">Join our agency and take the first step toward your modeling career. Fill out the form below, and our team will get in touch with you.</p>
-        <form id="become-a-model-form">
-            <label for="name" data-translate="form_full_name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+        <div class="model-form-container">
+            <form id="become-a-model-form">
+                <div class="form-group">
+                    <label for="name" data-translate="form_full_name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-            <label for="email" data-translate="form_email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="email" data-translate="form_email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <label for="phone" data-translate="form_phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+                <div class="form-group">
+                    <label for="phone" data-translate="form_phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
 
-            <label for="portfolio" data-translate="form_portfolio">Portfolio Link (optional):</label>
-            <input type="url" id="portfolio" name="portfolio">
+                <div class="form-group">
+                    <label for="portfolio" data-translate="form_portfolio">Portfolio Link (optional)</label>
+                    <input type="url" id="portfolio" name="portfolio">
+                </div>
 
-            <label for="message" data-translate="form_message">Tell us about yourself:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                <div class="form-group">
+                    <label data-translate="form_photos">Photos</label>
+                    <div class="drag-drop-area" id="dragDropArea">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p data-translate="form_photos_drag">Drag and drop your photos here or click to select files</p>
+                        <input type="file" id="fileInput" multiple accept="image/*" style="display: none">
+                    </div>
+                    <div class="uploaded-images" id="uploadedImages"></div>
+                </div>
 
-            <button type="submit" data-translate="form_submit">Submit</button>
-        </form>
+                <div class="form-group">
+                    <label for="message" data-translate="form_message">Tell us about yourself</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button" data-translate="form_submit">Submit</button>
+            </form>
+        </div>
     </main>
     <footer class="site-footer">
         <div class="footer-grid">
@@ -85,5 +107,7 @@
         </div>
     </footer>
     <script src="../js/main.js"></script>
+    <script src="../js/upload.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </body>
 </html>

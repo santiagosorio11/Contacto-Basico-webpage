@@ -21,16 +21,19 @@ function initializeHomepage() {
         // Set the first image as active initially
         images[currentIndex].classList.add('active');
 
-        setInterval(() => {
-            // Remove 'active' class from current image
-            images[currentIndex].classList.remove('active');
+        // Staggered interval for image changes
+        setTimeout(() => {
+            setInterval(() => {
+                // Remove 'active' class from current image
+                images[currentIndex].classList.remove('active');
 
-            // Calculate index of the next image
-            currentIndex = (currentIndex + 1) % images.length;
+                // Calculate index of the next image
+                currentIndex = (currentIndex + 1) % images.length;
 
-            // Add 'active' class to the new image
-            images[currentIndex].classList.add('active');
-        }, 4000); // Change image every 4 seconds
+                // Add 'active' class to the new image
+                images[currentIndex].classList.add('active');
+            }, 4000); // Change image every 4 seconds
+        }, colIndex * 500); // Stagger the start of each column's interval by 500ms
     });
 }
 
