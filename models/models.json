@@ -1,0 +1,168 @@
+{
+    "models": [
+      {
+        "id": "5283",
+        "name": "Alina Kovalenko",
+        "category": "women",
+        "thumbnailUrl": "https://images.pexels.com/photos/3772510/pexels-photo-3772510.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "portfolioImages": [
+          "https://images.pexels.com/photos/3772509/pexels-photo-3772509.jpeg?auto=compress&cs=tinysrgb&w=1260",
+          "https://images.pexels.com/photos/3772506/pexels-photo-3772506.jpeg?auto=compress&cs=tinysrgb&w=1260",
+          "https://images.pexels.com/photos/3772502/pexels-photo-3772502.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        ],
+        "polaroidImages": [
+          "https://images.pexels.com/photos/3772510/pexels-photo-3772510.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "https://images.pexels.com/photos/3772511/pexels-photo-3772511.jpeg?auto=compress&cs=tinysrgb&w=800"
+        ],
+        "videos": [],
+        "runways": [],
+        "details": {
+          "Height": "178 cm",
+          "Bust": "82 cm",
+          "Waist": "60 cm",
+          "Hips": "89 cm",
+          "Shoes": "39 EU",
+          "Hair": "Blonde",
+          "Eyes": "Blue"
+        }
+      },
+      {
+        "id": "5284",
+        "name": "Isabella Rossi",
+        "category": "women",
+        "thumbnailUrl": "https://images.pexels.com/photos/19402598/pexels-photo-19402598.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "portfolioImages": [
+          "https://images.pexels.com/photos/13197660/pexels-photo-13197660.jpeg?auto=compress&cs=tinysrgb&w=1260",
+          "https://images.pexels.com/photos/20261907/pexels-photo-20261907.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        ],
+        "polaroidImages": [],
+        "videos": [],
+        "runways": [],
+        "details": {
+          "Height": "175 cm", "Bust": "85 cm", "Waist": "62 cm", "Hips": "90 cm", "Shoes": "38 EU", "Hair": "Brown", "Eyes": "Green"
+        }
+      },
+      {
+        "id": "5285",
+        "name": "Chloe Nguyen",
+        "category": "women",
+        "thumbnailUrl": "https://images.pexels.com/photos/9310034/pexels-photo-9310034.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "portfolioImages": [],
+        "polaroidImages": [
+            "https://images.pexels.com/photos/9310034/pexels-photo-9310034.jpeg?auto=compress&cs=tinysrgb&w=800"
+        ],
+        "videos": [],
+        "runways": [],
+        "details": {
+          "Height": "172 cm", "Bust": "80 cm", "Waist": "59 cm", "Hips": "88 cm", "Shoes": "37.5 EU", "Hair": "Black", "Eyes": "Brown"
+        }
+      },
+      {
+        "id": "5286",
+        "name": "Sofia Petrova",
+        "category": "women",
+        "thumbnailUrl": "https://images.pexels.com/photos/5955375/pexels-photo-5955375.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "portfolioImages": [
+            "https://images.pexels.com/photos/5955375/pexels-photo-5955375.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        ],
+        "polaroidImages": [],
+        "videos": [],
+        "runways": [],
+        "details": {
+          "Height": "180 cm", "Bust": "84 cm", "Waist": "61 cm", "Hips": "91 cm", "Shoes": "40 EU", "Hair": "Red", "Eyes": "Green"
+        }
+      },
+      {
+        "id": "5287",
+        "name": "Aisha Khan",
+        "category": "women",
+        "thumbnailUrl": "https://images.pexels.com/photos/20343360/pexels-photo-20343360.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "portfolioImages": [
+            "https://images.pexels.com/photos/20343360/pexels-photo-20343360.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        ],
+        "polaroidImages": [],
+        "videos": [],
+        "runways": [],
+        "details": {
+          "Height": "176 cm", "Bust": "86 cm", "Waist": "63 cm", "Hips": "92 cm", "Shoes": "39 EU", "Hair": "Black", "Eyes": "Brown"
+        }
+      },
+      {
+        "id": "6001",
+        "name": "Liam Carter",
+        "category": "men",
+        "thumbnailUrl": "https://images.pexels.com/photos/3222421/pexels-photo-3222421.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "portfolioImages": [
+          "https://images.pexels.com/photos/3222421/pexels-photo-3222421.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        ],
+        "polaroidImages": [
+            "https://images.pexels.com/photos/20127599/pexels-photo-20127599.jpeg?auto=compress&cs=tinysrgb&w=800"
+        ],
+        "videos": [],
+        "runways": [],
+        "details": {
+          "Height": "188 cm", "Suit": "40R", "Waist": "81 cm", "Shoes": "44 EU", "Hair": "Brown", "Eyes": "Blue"
+        }
+      },
+      {
+        "id": "6002",
+        "name": "Noah Evans",
+        "category": "men",
+        "thumbnailUrl": "https://images.pexels.com/photos/5378700/pexels-photo-5378700.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "portfolioImages": [
+            "https://images.pexels.com/photos/5378700/pexels-photo-5378700.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        ],
+        "polaroidImages": [],
+        "videos": [],
+        "runways": [],
+        "details": {
+          "Height": "190 cm", "Suit": "42L", "Waist": "84 cm", "Shoes": "45 EU", "Hair": "Blonde", "Eyes": "Green"
+        }
+      },
+      {
+        "id": "6003",
+        "name": "Ethan James",
+        "category": "men",
+        "thumbnailUrl": "https://images.pexels.com/photos/6652932/pexels-photo-6652932.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "portfolioImages": [
+            "https://images.pexels.com/photos/6652932/pexels-photo-6652932.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        ],
+        "polaroidImages": [],
+        "videos": [],
+        "runways": [],
+        "details": {
+          "Height": "185 cm", "Suit": "38R", "Waist": "79 cm", "Shoes": "43 EU", "Hair": "Black", "Eyes": "Brown"
+        }
+      },
+      {
+        "id": "6004",
+        "name": "Mateo Garcia",
+        "category": "men",
+        "thumbnailUrl": "https://images.pexels.com/photos/20343350/pexels-photo-20343350.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "portfolioImages": [
+            "https://images.pexels.com/photos/20343350/pexels-photo-20343350.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        ],
+        "polaroidImages": [],
+        "videos": [],
+        "runways": [],
+        "details": {
+          "Height": "183 cm", "Suit": "39R", "Waist": "80 cm", "Shoes": "42 EU", "Hair": "Brown", "Eyes": "Hazel"
+        }
+      },
+      {
+        "id": "6005",
+        "name": "Kenji Tanaka",
+        "category": "men",
+        "thumbnailUrl": "https://images.pexels.com/photos/8107931/pexels-photo-8107931.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "portfolioImages": [
+            "https://images.pexels.com/photos/8107931/pexels-photo-8107931.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        ],
+        "polaroidImages": [],
+        "videos": [],
+        "runways": [],
+        "details": {
+          "Height": "180 cm", "Suit": "36R", "Waist": "75 cm", "Shoes": "41 EU", "Hair": "Black", "Eyes": "Brown"
+        }
+      }
+    ]
+}
