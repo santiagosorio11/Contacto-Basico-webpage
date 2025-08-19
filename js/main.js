@@ -76,13 +76,15 @@ async function loadGridPage(category) {
             card.href = `portfolio.html?id=${model.id}`;
             card.className = 'model-card';
             card.innerHTML = `
-                <img src="${model.thumbnailUrl}" alt="${model.name}" loading="lazy">
-                <div class="model-card-overlay">
-                    <span class="model-card-name">${model.name}</span>
-                    <div class="model-details">
-                        ${Object.entries(model.details).map(([key, value]) => `<p>${key}: ${value}</p>`).join('')}
+                <div class="model-image-wrapper">
+                    <img src="${model.thumbnailUrl}" alt="${model.name}" loading="lazy">
+                    <div class="model-card-overlay">
+                        <div class="model-details">
+                            ${Object.entries(model.details).map(([key, value]) => `<p>${key}: ${value}</p>`).join('')}
+                        </div>
                     </div>
                 </div>
+                <span class="model-card-name">${model.name}</span>
             `;
             gridContainer.appendChild(card);
         });
@@ -214,48 +216,6 @@ async function loadPortfolioPage() {
 }
 
 
-let translations = {};
-
-async function loadTranslations() {
-    try {
-        const response = await fetch('../translations.json');
-        if (!response.ok) throw new Error('Network response was not ok');
-        translations = await response.json();
-    } catch (error) {
-        console.error('Fetch error:', error);
-    }
-}
-
-function setLanguage(lang) {
-    document.documentElement.lang = lang;
-    const elements = document.querySelectorAll('[data-translate]');
-    elements.forEach(el => {
-        const key = el.getAttribute('data-translate');
-        if (translations[lang] && translations[lang][key]) {
-            el.innerText = translations[lang][key];
-        }
-    });
-
-    // Handle dynamic content translations
-    document.querySelectorAll('[data-translate-title-en]').forEach(el => {
-        el.innerText = lang === 'en' ? el.getAttribute('data-translate-title-en') : el.getAttribute('data-translate-title-es');
-    });
-    document.querySelectorAll('[data-translate-date-en]').forEach(el => {
-        el.innerText = lang === 'en' ? el.getAttribute('data-translate-date-en') : el.getAttribute('data-translate-date-es');
-    });
-    document.querySelectorAll('[data-translate-description-en]').forEach(el => {
-        el.innerText = lang === 'en' ? el.getAttribute('data-translate-description-en') : el.getAttribute('data-translate-description-es');
-    });
-
-    if (lang === 'en') {
-        document.getElementById('lang-en').classList.add('active');
-        document.getElementById('lang-es').classList.remove('active');
-    } else {
-        document.getElementById('lang-es').classList.add('active');
-        document.getElementById('lang-en').classList.remove('active');
-    }
-}
-
 async function loadEventsPage() {
     const eventsContainer = document.querySelector('.events-container');
     if (!eventsContainer) return;
@@ -279,7 +239,7 @@ async function loadEventsPage() {
             eventsContainer.appendChild(eventElement);
         });
         // Re-apply translations after loading dynamic content
-        setLanguage(document.documentElement.lang);
+        initializeTranslation(); // Call the function from translations.js
 
     } catch (error) {
         eventsContainer.innerHTML = '<p>Error loading events. Please try again later.</p>';
@@ -288,13 +248,6 @@ async function loadEventsPage() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadTranslations();
-    const initialLang = document.documentElement.lang || 'es';
-    setLanguage(initialLang);
-
-    document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
-    document.getElementById('lang-es').addEventListener('click', () => setLanguage('es'));
-
     const page = window.location.pathname.split("/").pop();
 
     if (page === 'men.html') {

@@ -1,8 +1,19 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
-
 /* --- IMPORTS Y VARIABLES GLOBALES --- */
+@font-face {
+    font-family: 'Portrait Regular';
+    src: url('../portrait-regular-web.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../proximanova-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Estilos para la barra de búsqueda */
 .search-wrapper {
@@ -65,18 +76,12 @@
 }
 
 /* Ajustes para los títulos y elementos principales */
+.model-card-name,
 .event-title,
 .portfolio-name,
 .site-title,
 .model-details-container h2 {
-    font-family: 'Open Sans', sans-serif !important;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-}
-
-.model-card-name {
-    font-family: 'Open Sans', sans-serif !important;
-    font-weight: 300;
+    font-weight: 1.1;
     letter-spacing: 0.02em;
 }
 
@@ -353,8 +358,8 @@
 }
 
 :root {
-    --font-primary: 'Open Sans', sans-serif;
-    --font-secondary: sans-serif;
+    --font-primary: 'Portrait Regular', serif;
+    --font-secondary: 'Proxima Nova', sans-serif;
     --color-background: #ffffff;
     --color-text: #333333;
     --color-text-light: #6b7280;
@@ -371,7 +376,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif; /* Applied Open Sans as default */
+    font-family: var(--font-secondary);
     background-color: var(--color-background);
     color: var(--color-text);
     -webkit-font-smoothing: antialiased;
@@ -538,10 +543,9 @@ img {
     text-transform: uppercase;
 }
 
-.site-title, h1, h2, h3, .modelNameBook {
-    font-family: 'Open Sans', sans-serif !important;
-    text-transform: uppercase;
-    font-weight: 700;
+.site-title, h1, h2, h3 {
+    text-transform: capitalize;
+    font-weight: 1.1;
     letter-spacing: 0.02em;
 }
 
@@ -632,18 +636,9 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 
 .model-card {
     position: relative;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.model-image-wrapper {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 2 / 3; /* Maintain aspect ratio for the image */
+    aspect-ratio: 2 / 3;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .model-card img {
@@ -672,7 +667,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     align-items: center;
     padding: 1.5rem;
     text-align: center;
-    pointer-events: none;
+    pointer-events: none; /* Permite que los clics lleguen al enlace <a> subyacente */
 }
 
 .model-card:hover .model-card-overlay {
@@ -696,13 +691,15 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 }
 
 .model-card-name {
-    color: var(--color-text);
-    font-family: var(--font-secondary);
-    font-size: 1rem;
-    font-weight: normal;
-    margin-top: 0.5rem; /* Space between image and name */
-    padding-bottom: 1rem; /* Add padding below the name */
-    width: 100%;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transform: translateY(15px);
+    transition: transform 0.4s ease;
+}
+
+.model-card:hover .model-card-name {
+    transform: translateY(0);
 }
 
 /* --- PÁGINA DE PORTAFOLIO --- */
@@ -911,19 +908,17 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 
 /* New styles for Portfolio Page Carousel */
 .portfolio-main .modelNameBook {
-    font-family: 'Open Sans', sans-serif !important;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-weight: 700; /* Applied bold font weight */
 }
 
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 360px; /* Reduced by 40% from 600px */
+    max-width: 600px; /* Adjust as needed */
     margin: 0 auto 3rem auto;
     aspect-ratio: 2 / 3; /* Portrait orientation */
     overflow: hidden;
