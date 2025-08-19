@@ -45,29 +45,6 @@
       "runways": []
     },
     {
-      "id": "john-doe",
-      "name": "JOHN DOE",
-      "category": "men",
-      "thumbnailUrl": "https://via.placeholder.com/300x400?text=John+Doe",
-      "details": {
-        "height": "185 cm - 6 ft 1 in",
-        "bust": "95 cm - 37 in",
-        "waist": "78 cm - 31 in",
-        "hips": "92 cm - 36 in",
-        "shoe": "44 EU - 10 UK",
-        "hair": "Brown",
-        "eyes": "Brown"
-      },
-      "portfolioImages": [
-        "https://via.placeholder.com/800x1200?text=John+Doe+1",
-        "https://via.placeholder.com/800x1200?text=John+Doe+2",
-        "https://via.placeholder.com/1200x800?text=John+Doe+3"
-      ],
-      "polaroidImages": [],
-      "videos": [],
-      "runways": []
-    },
-    {
       "id": "jane-smith",
       "name": "JANE SMITH",
       "category": "women",
@@ -84,28 +61,6 @@
       "portfolioImages": [
         "https://via.placeholder.com/800x1200?text=Jane+Smith+1",
         "https://via.placeholder.com/800x1200?text=Jane+Smith+2"
-      ],
-      "polaroidImages": [],
-      "videos": [],
-      "runways": []
-    },
-    {
-      "id": "michael-jones",
-      "name": "MICHAEL JONES",
-      "category": "men",
-      "thumbnailUrl": "https://via.placeholder.com/300x400?text=Michael+Jones",
-      "details": {
-        "height": "188 cm - 6 ft 2 in",
-        "bust": "98 cm - 38.5 in",
-        "waist": "80 cm - 31.5 in",
-        "hips": "94 cm - 37 in",
-        "shoe": "45 EU - 10.5 UK",
-        "hair": "Black",
-        "eyes": "Brown"
-      },
-      "portfolioImages": [
-        "https://via.placeholder.com/800x1200?text=Michael+Jones+1",
-        "https://via.placeholder.com/800x1200?text=Michael+Jones+2"
       ],
       "polaroidImages": [],
       "videos": [],
@@ -134,28 +89,6 @@
       "runways": []
     },
     {
-      "id": "david-brown",
-      "name": "DAVID BROWN",
-      "category": "men",
-      "thumbnailUrl": "https://via.placeholder.com/300x400?text=David+Brown",
-      "details": {
-        "height": "183 cm - 6 ft 0 in",
-        "bust": "92 cm - 36 in",
-        "waist": "76 cm - 30 in",
-        "hips": "90 cm - 35.5 in",
-        "shoe": "43 EU - 9 UK",
-        "hair": "Blonde",
-        "eyes": "Blue"
-      },
-      "portfolioImages": [
-        "https://via.placeholder.com/800x1200?text=David+Brown+1",
-        "https://via.placeholder.com/800x1200?text=David+Brown+2"
-      ],
-      "polaroidImages": [],
-      "videos": [],
-      "runways": []
-    },
-    {
       "id": "olivia-green",
       "name": "OLIVIA GREEN",
       "category": "women",
@@ -172,28 +105,6 @@
       "portfolioImages": [
         "https://via.placeholder.com/800x1200?text=Olivia+Green+1",
         "https://via.placeholder.com/800x1200?text=Olivia+Green+2"
-      ],
-      "polaroidImages": [],
-      "videos": [],
-      "runways": []
-    },
-    {
-      "id": "chris-black",
-      "name": "CHRIS BLACK",
-      "category": "men",
-      "thumbnailUrl": "https://via.placeholder.com/300x400?text=Chris+Black",
-      "details": {
-        "height": "190 cm - 6 ft 3 in",
-        "bust": "100 cm - 39.5 in",
-        "waist": "82 cm - 32 in",
-        "hips": "96 cm - 37.5 in",
-        "shoe": "46 EU - 11 UK",
-        "hair": "Brown",
-        "eyes": "Green"
-      },
-      "portfolioImages": [
-        "https://via.placeholder.com/800x1200?text=Chris+Black+1",
-        "https://via.placeholder.com/800x1200?text=Chris+Black+2"
       ],
       "polaroidImages": [],
       "videos": [],
@@ -222,26 +133,454 @@
       "runways": []
     },
     {
-      "id": "daniel-white",
-      "name": "DANIEL WHITE",
+      "id": "adrian",
+      "name": "ADRIAN",
       "category": "men",
-      "thumbnailUrl": "https://via.placeholder.com/300x400?text=Daniel+White",
-      "details": {
-        "height": "186 cm - 6 ft 1 in",
-        "bust": "96 cm - 37.5 in",
-        "waist": "79 cm - 31 in",
-        "hips": "93 cm - 36.5 in",
-        "shoe": "44 EU - 10 UK",
-        "hair": "Brown",
-        "eyes": "Blue"
-      },
+      "thumbnailUrl": "../fotos cero hombres/ADRIAN.JPG",
+      "details": {},
       "portfolioImages": [
-        "https://via.placeholder.com/800x1200?text=Daniel+White+1",
-        "https://via.placeholder.com/800x1200?text=Daniel+White+2"
-      ],
-      "polaroidImages": [],
-      "videos": [],
-      "runways": []
+        "../fotos cero hombres/ADRIAN.JPG"
+      ]
+    },
+    {
+      "id": "alan",
+      "name": "ALAN",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/ALAN.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/ALAN.jpg"
+      ]
+    },
+    {
+      "id": "alejo",
+      "name": "ALEJO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/ALEJO.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/ALEJO.jpg"
+      ]
+    },
+    {
+      "id": "alfredo",
+      "name": "ALFREDO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/ALFREDO.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/ALFREDO.jpg"
+      ]
+    },
+    {
+      "id": "benig",
+      "name": "BENIG",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/BENIG.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/BENIG.jpg"
+      ]
+    },
+    {
+      "id": "brian",
+      "name": "BRIAN",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/BRIAN.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/BRIAN.jpg"
+      ]
+    },
+    {
+      "id": "camilo",
+      "name": "CAMILO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/CAMILO.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/CAMILO.jpg"
+      ]
+    },
+    {
+      "id": "cris",
+      "name": "CRIS",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/CRIS.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/CRIS.jpeg"
+      ]
+    },
+    {
+      "id": "cristian",
+      "name": "CRISTIAN",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/CRISTIAN.JPG",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/CRISTIAN.JPG"
+      ]
+    },
+    {
+      "id": "damian",
+      "name": "DAMIAN",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/DAMIAN .jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/DAMIAN .jpeg"
+      ]
+    },
+    {
+      "id": "daniel",
+      "name": "DANIEL",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/DANIEL .JPG",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/DANIEL .JPG"
+      ]
+    },
+    {
+      "id": "david-a",
+      "name": "DAVID A",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/DAVID A.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/DAVID A.jpeg"
+      ]
+    },
+    {
+      "id": "david-c",
+      "name": "DAVID C",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/DAVID C.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/DAVID C.jpeg"
+      ]
+    },
+    {
+      "id": "david",
+      "name": "DAVID",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/DAVID.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/DAVID.jpeg"
+      ]
+    },
+    {
+      "id": "eduard",
+      "name": "EDUARD",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/EDUARD.JPG",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/EDUARD.JPG"
+      ]
+    },
+    {
+      "id": "eduardo",
+      "name": "EDUARDO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/EDUARDO.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/EDUARDO.jpeg"
+      ]
+    },
+    {
+      "id": "erik",
+      "name": "ERIK",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/ERIK.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/ERIK.jpeg"
+      ]
+    },
+    {
+      "id": "gabriel",
+      "name": "GABRIEL",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/GABRIEL.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/GABRIEL.jpeg"
+      ]
+    },
+    {
+      "id": "gio",
+      "name": "GIO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/GIO.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/GIO.jpeg"
+      ]
+    },
+    {
+      "id": "ian",
+      "name": "IAN",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/IAN.JPG",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/IAN.JPG"
+      ]
+    },
+    {
+      "id": "ivo",
+      "name": "IVO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/IVO.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/IVO.jpg"
+      ]
+    },
+    {
+      "id": "javid",
+      "name": "JAVID",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/JAVID.JPG",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/JAVID.JPG"
+      ]
+    },
+    {
+      "id": "jesus",
+      "name": "JESUS",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/JESUS.png",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/JESUS.png"
+      ]
+    },
+    {
+      "id": "jhoxan",
+      "name": "JHOXAN",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/JHOXAN.JPG",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/JHOXAN.JPG"
+      ]
+    },
+    {
+      "id": "johan",
+      "name": "JOHAN",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/JOHAN.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/JOHAN.jpeg"
+      ]
+    },
+    {
+      "id": "juan-jose",
+      "name": "JUAN JOSE",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/JUAN JOSE.JPG",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/JUAN JOSE.JPG"
+      ]
+    },
+    {
+      "id": "juanfe",
+      "name": "JUANFE",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/JUANFE.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/JUANFE.jpg"
+      ]
+    },
+    {
+      "id": "lorenzo",
+      "name": "LORENZO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/LORENZO.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/LORENZO.jpg"
+      ]
+    },
+    {
+      "id": "marcos",
+      "name": "MARCOS",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/MARCOS.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/MARCOS.jpg"
+      ]
+    },
+    {
+      "id": "mariano",
+      "name": "MARIANO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/MARIANO.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/MARIANO.jpg"
+      ]
+    },
+    {
+      "id": "mateo",
+      "name": "MATEO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/MATEO.JPG",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/MATEO.JPG"
+      ]
+    },
+    {
+      "id": "matias-p",
+      "name": "MATIAS P",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/MATIAS P.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/MATIAS P.jpeg"
+      ]
+    },
+    {
+      "id": "melvin",
+      "name": "MELVIN",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/MELVIN.jpeg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/MELVIN.jpeg"
+      ]
+    },
+    {
+      "id": "paulo",
+      "name": "PAULO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/PAULO.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/PAULO.jpg"
+      ]
+    },
+    {
+      "id": "raul",
+      "name": "RAUL",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/RAUL.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/RAUL.jpg"
+      ]
+    },
+    {
+      "id": "romain",
+      "name": "ROMAIN",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/ROMAIN.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/ROMAIN.jpg"
+      ]
+    },
+    {
+      "id": "santi",
+      "name": "SANTI",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/SANTI.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/SANTI.jpg"
+      ]
+    },
+    {
+      "id": "santiago-n",
+      "name": "SANTIAGO N",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/SANTIAGO N.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/SANTIAGO N.jpg"
+      ]
+    },
+    {
+      "id": "sergei",
+      "name": "SERGEI",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/SERGEI.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/SERGEI.jpg"
+      ]
+    },
+    {
+      "id": "sergio",
+      "name": "SERGIO",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/SERGIO.JPG",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/SERGIO.JPG"
+      ]
+    },
+    {
+      "id": "stanley",
+      "name": "STANLEY",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/STANLEY.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/STANLEY.jpg"
+      ]
+    },
+    {
+      "id": "steven",
+      "name": "STEVEN",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/STEVEN.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/STEVEN.jpg"
+      ]
+    },
+    {
+      "id": "tanner",
+      "name": "TANNER",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/TANNER.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/TANNER.jpg"
+      ]
+    },
+    {
+      "id": "victor",
+      "name": "VICTOR",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/VICTOR.jpg",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/VICTOR.jpg"
+      ]
+    },
+    {
+      "id": "william",
+      "name": "WILLIAM",
+      "category": "men",
+      "thumbnailUrl": "../fotos cero hombres/WILLIAM.JPG",
+      "details": {},
+      "portfolioImages": [
+        "../fotos cero hombres/WILLIAM.JPG"
+      ]
     }
   ]
 }

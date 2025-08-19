@@ -33,7 +33,7 @@ function initializeHomepage() {
                 // Add 'active' class to the new image
                 images[currentIndex].classList.add('active');
             }, 4000); // Change image every 4 seconds
-        }, colIndex * 500); // Stagger the start of each column's interval by 500ms
+        }, colIndex * 1333); // Stagger the start of each column's interval for a more noticeable effect
     });
 }
 
@@ -46,11 +46,27 @@ async function loadGridPage(category) {
     if (!gridContainer) return;
 
     try {
-        const response = await fetch('../models/models.json');
-        if (!response.ok) throw new Error('Network response was not ok');
-        const data = await response.json();
+        const [modelsResponse, translationsResponse] = await Promise.all([
+            fetch('../models/models.json'),
+            fetch('../translations.json')
+        ]);
+
+        if (!modelsResponse.ok || !translationsResponse.ok) 
+            throw new Error('Network response was not ok');
+
+        const [data, translations] = await Promise.all([
+            modelsResponse.json(),
+            translationsResponse.json()
+        ]);
         
+        const currentLang = localStorage.getItem('preferred_language') || detectLanguage();
         const filteredModels = data.models.filter(model => model.category === category);
+
+        // Update page title
+        const pageTitle = document.querySelector('.site-title');
+        if (pageTitle) {
+            pageTitle.textContent = translations[currentLang][`nav_${category}`];
+        }
 
         // Limpiar el loader
         gridContainer.innerHTML = '';

@@ -1,5 +1,19 @@
 /* --- IMPORTS Y VARIABLES GLOBALES --- */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Portrait Regular';
+    src: url('../portrait-regular-web.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../proximanova-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Estilos para la barra de búsqueda */
 .search-wrapper {
@@ -59,6 +73,21 @@
 .search-button i {
     color: var(--color-background);
     font-size: 1.1rem;
+}
+
+/* Ajustes para los títulos y elementos principales */
+.model-card-name,
+.event-title,
+.portfolio-name,
+.site-title,
+.model-details-container h2 {
+    font-weight: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.footer-column h3 {
+    font-weight: normal;
+    letter-spacing: 0.05em;
 }
 
 /* Estilos para el texto en Become a Model */
@@ -143,7 +172,7 @@
 .about-us-content p {
     text-transform: none !important;
     font-family: var(--font-secondary);
-    font-weight: 300;
+    font-weight: normal;
 }
 
 .events-container {
@@ -180,10 +209,10 @@
 .event-title {
     font-family: var(--font-primary);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: normal;
     margin-bottom: 0.5rem;
     color: var(--color-title);
-    text-transform: capitalize !important;
+    text-transform: capitalize;
 }
 
 .event-date {
@@ -329,8 +358,8 @@
 }
 
 :root {
-    --font-primary: 'Cormorant Garamond', serif;
-    --font-secondary: 'Montserrat', sans-serif;
+    --font-primary: 'Portrait Regular', serif;
+    --font-secondary: 'Proxima Nova', sans-serif;
     --color-background: #ffffff;
     --color-text: #333333;
     --color-text-light: #6b7280;
@@ -412,7 +441,7 @@ img {
 .language-toggle button {
     font-family: var(--font-secondary);
     font-size: 0.85rem;
-    font-weight: 400;
+    font-weight: normal;
     letter-spacing: 0.05em;
     color: var(--color-text);
     background: none;
@@ -421,7 +450,7 @@ img {
     padding: 0.5rem 0;
     transition: all 0.3s ease-in-out;
     position: relative;
-    text-transform: none !important;
+    text-transform: capitalize;
 }
 
 .main-nav a:hover,
@@ -432,19 +461,48 @@ img {
 
 .main-nav a.active,
 .language-toggle button.active {
-    font-weight: 700;
     color: var(--color-accent);
 }
 
-.main-nav a.active::after,
-.language-toggle button.active::after {
+.main-nav a::after,
+.language-toggle button::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.main-nav a.active::after {
+    width: 100%;
+}
+
+.main-nav a:hover::after,
+.language-toggle button:hover::after {
+    width: 100%;
+}
+
+/* Base line for menu items */
+.main-nav a::before,
+.language-toggle button::before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 2px;
     background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after,
+.language-toggle button:hover::after,
+.main-nav a.active::after,
+.language-toggle button.active::after {
+    width: 100%;
 }
 
 .language-toggle {
@@ -461,7 +519,7 @@ img {
 
 /* --- PADDING SUPERIOR PARA CONTENIDO PRINCIPAL --- */
 .homepage-main-static, .grid-main, .portfolio-main, .contact-main {
-    padding-top: 6rem; /* Espacio para el header fijo */
+    padding-top: 6rem; /* Increased padding to prevent overlap */
     padding-bottom: 4rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -471,18 +529,24 @@ img {
 /* --- TÍTULOS DE PÁGINA --- */
 .site-title {
     font-family: var(--font-primary);
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 4.5rem;
+    font-weight: 900;
     text-align: center;
     margin-bottom: 2rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
     color: var(--color-title);
+    text-transform: capitalize;
+}
+
+/* Headers en mayúsculas, títulos con primera letra mayúscula */
+.main-nav a {
     text-transform: uppercase;
 }
 
-/* Asegurarse de que solo los títulos estén en mayúsculas */
-h1, h2, h3, .site-title {
-    text-transform: uppercase;
+.site-title, h1, h2, h3 {
+    text-transform: capitalize;
+    font-weight: 1.1;
+    letter-spacing: 0.02em;
 }
 
 /* Resto del texto en formato normal */
@@ -522,7 +586,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 .site-title-logo {
     display: block;
     margin: 2rem auto 2rem auto; /* Adjusted margin-bottom to move it up */
-    max-width: 350px; /* Increased max-width to make it larger */
+    max-width: 450px; /* Increased max-width to make it larger */
     height: auto;
 }
 
@@ -530,8 +594,8 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 .static-mosaic-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    max-width: 1200px;
+    gap: 1rem;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -566,7 +630,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 /* --- PÁGINAS DE CUADRÍCULA (GRID) --- */
 .model-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 2rem;
 }
 
@@ -646,10 +710,10 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 
 .portfolio-name {
     font-size: 3rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: normal;
+    text-transform: capitalize;
     letter-spacing: 0.05em;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-primary);
 }
 
 .portfolio-sub-nav {
@@ -740,12 +804,12 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 
 .footer-column h3 {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: normal;
     color: var(--color-text);
-    margin-bottom: 0.25rem; /* Reduce espacio entre títulos y contenido */
-    text-transform: uppercase; /* Solo títulos en mayúscula */
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-secondary);
 }
 
 .footer-column ul {
@@ -981,6 +1045,45 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     font-family: var(--font-secondary);
     font-size: 0.9rem;
     color: var(--color-text-light);
+}
+
+/* Contact Page Styles */
+.contact-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-intro p {
+    margin-bottom: 2rem;
+}
+
+.contact-info-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.contact-details, .social-media-section {
+    flex: 1;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links a {
+    text-decoration: underline;
+}
+
+.contact-images-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 @media (max-width: 768px) {

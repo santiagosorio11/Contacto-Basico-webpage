@@ -24,6 +24,7 @@
     <meta property="twitter:image" content="URL_DE_TU_SITIO_WEB/assets/logo.png">
 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
@@ -52,52 +53,55 @@
         <a href="../index.html" class="logo-link">
             <img src="../assets/logo.png" alt="Básico Model Management Logo" class="logo">
         </a>
-        <nav class="main-nav">
-            <a href="women.html" data-translate="nav_women">Women</a>
-            <a href="men.html" data-translate="nav_men">Men</a>
-            <a href="about-us.html" data-translate="nav_about_us">About Us</a>
-            <a href="events.html" data-translate="nav_events">Events</a>
-            <a href="become-a-model.html" data-translate="nav_become_a_model">Become a Model</a>
-            <a href="contact-us.html" class="active" data-translate="nav_contact_us">Contact Us</a>
-        </nav>
-        <div class="language-toggle">
-            <button id="lang-en" class="active">EN</button>
-            <button id="lang-es">ES</button>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger"></span>
+        </button>
+        <div class="nav-container">
+            <nav class="main-nav">
+                <a href="women.html" data-translate="nav_women">Women</a>
+                <a href="men.html" data-translate="nav_men">Men</a>
+                <a href="about-us.html" data-translate="nav_about_us">About Us</a>
+                <a href="events.html" data-translate="nav_events">Events</a>
+                <a href="become-a-model.html" data-translate="nav_become_a_model">Become a Model</a>
+                <a href="contact-us.html" class="active" data-translate="nav_contact_us">Contact Us</a>
+            </nav>
+            <div class="language-toggle">
+                <button id="lang-en" class="active">EN</button>
+                <button id="lang-es">ES</button>
+            </div>
         </div>
     </header>
 
-    <main class="contact-main">
+    <main class="homepage-main-static">
+        <h1 class="site-title" data-translate="contact_us_title">Contact Us</h1>
+        <div class="about-us-content">
         <section class="contact-intro">
-            <h1 class="site-title" data-translate="contact_us_title">Contact Us</h1>
-            <p data-translate="contact_us_p1">For inquiries, collaborations, or bookings, feel free to reach out to us through the form below or on our social media.</p>
+            <p data-translate="contact_us_p1">For inquiries, collaborations, or bookings, feel free to reach out to us through our social media or contact information below.</p>
         </section>
 
-        <section class="contact-form-section">
-            <form action="#" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label for="name" data-translate="form_name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email" data-translate="form_email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message" data-translate="form_message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn" data-translate="form_submit">Send Message</button>
-            </form>
+        <section class="contact-info-section">
+            <div class="contact-details">
+                <h2>Contacto Basico</h2>
+                <p>Email: <a href="mailto:info@contactobasico.com">info@contactobasico.com</a></p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Model Ave, Fashion City</p>
+            </div>
+            <div class="social-media-section">
+                <h2 data-translate="contact_social_title">Find us on Social Media</h2>
+                <ul class="social-links">
+                    <li><a href="https://instagram.com/contactobasico" target="_blank">Instagram</a></li>
+                    <li><a href="https://facebook.com/contactobasico" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/contactobasico" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
         </section>
 
-        <section class="social-media-section">
-            <h2 data-translate="contact_social_title">Find us on Social Media</h2>
-            <ul class="social-links">
-                <li><a href="https://instagram.com/contactobasico" target="_blank">Instagram</a></li>
-                <li><a href="https://facebook.com/contactobasico" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com/contactobasico" target="_blank">Twitter</a></li>
-            </ul>
+        <section class="contact-images-section">
+            <img src="../fotos mosaico/1.png" alt="Ambient Image 1">
+            <img src="../fotos mosaico/2.png" alt="Ambient Image 2">
+            <img src="../fotos mosaico/3.png" alt="Ambient Image 3">
         </section>
+    </div>
     </main>
 
     <footer class="site-footer">
@@ -138,6 +142,8 @@
         </div>
     </footer>
 
+    <script src="../js/translations.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>

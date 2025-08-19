@@ -1,0 +1,131 @@
+/* Header Styles */
+.main-header {
+    padding: 0.25rem 1rem; /* Reduce padding to make the navbar thinner */
+    height: auto;
+    min-height: 50px; /* Reduce min-height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 35px; /* Slightly smaller logo */
+    width: auto;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center nav items */
+    flex-grow: 1; /* Allow container to grow and center content */
+    gap: 1rem;
+}
+
+.main-nav {
+    display: flex;
+    gap: 1.5rem; /* Space between nav items */
+    font-size: 0.75rem; /* Smaller font size */
+}
+
+.main-nav a {
+    padding: 0.25rem 0.5rem; /* Adjust padding */
+}
+
+.language-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.language-toggle button {
+    font-size: 0.75rem; /* Smaller font size */
+    padding: 0.25rem 0.5rem; /* Adjust padding */
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-text);
+    position: relative;
+    transition: background 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-text);
+    transition: transform 0.3s;
+}
+
+.hamburger::before {
+    top: -6px;
+}
+
+.hamburger::after {
+    bottom: -6px;
+}
+
+.menu-toggle.active .hamburger {
+    background: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+    transform: rotate(45deg) translate(4px, 4px);
+}
+
+.menu-toggle.active .hamburger::after {
+    transform: rotate(-45deg) translate(4px, -4px);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-container {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 80px 1rem 1rem;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container.active {
+        right: 0;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .main-nav a {
+        width: 100%;
+        padding: 0.8rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .language-toggle {
+        margin-top: 1rem;
+    }
+}

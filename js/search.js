@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const modelCards = document.querySelectorAll('.model-card');
 
         modelCards.forEach(card => {
-            const modelName = card.querySelector('.model-name')?.textContent.toLowerCase() || '';
+            const modelName = card.querySelector('.model-card-name')?.textContent.toLowerCase() || '';
             const modelDetails = card.querySelector('.model-details')?.textContent.toLowerCase() || '';
             
             const matchesSearch = modelName.includes(searchTerm) || 
