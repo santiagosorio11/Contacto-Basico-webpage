@@ -1,19 +1,8 @@
-/* --- IMPORTS Y VARIABLES GLOBALES --- */
-@font-face {
-    font-family: 'Portrait Regular';
-    src: url('../portrait-regular-web.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url('../proximanova-light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+/* --- IMPORTS Y VARIABLES GLOBALES --- */
+
 
 /* Estilos para la barra de búsqueda */
 .search-wrapper {
@@ -76,12 +65,18 @@
 }
 
 /* Ajustes para los títulos y elementos principales */
-.model-card-name,
 .event-title,
 .portfolio-name,
 .site-title,
 .model-details-container h2 {
-    font-weight: 1.1;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.model-card-name {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300;
     letter-spacing: 0.02em;
 }
 
@@ -124,7 +119,7 @@
     }
 
     .site-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
 }
@@ -208,7 +203,7 @@
 
 .event-title {
     font-family: var(--font-primary);
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: normal;
     margin-bottom: 0.5rem;
     color: var(--color-title);
@@ -358,8 +353,8 @@
 }
 
 :root {
-    --font-primary: 'Portrait Regular', serif;
-    --font-secondary: 'Proxima Nova', sans-serif;
+    --font-primary: 'Open Sans', sans-serif;
+    --font-secondary: sans-serif;
     --color-background: #ffffff;
     --color-text: #333333;
     --color-text-light: #6b7280;
@@ -376,7 +371,7 @@
 }
 
 body {
-    font-family: var(--font-secondary);
+    font-family: 'Open Sans', sans-serif; /* Applied Open Sans as default */
     background-color: var(--color-background);
     color: var(--color-text);
     -webkit-font-smoothing: antialiased;
@@ -529,7 +524,7 @@ img {
 /* --- TÍTULOS DE PÁGINA --- */
 .site-title {
     font-family: var(--font-primary);
-    font-size: 4.5rem;
+    font-size: 3.375rem;
     font-weight: 900;
     text-align: center;
     margin-bottom: 2rem;
@@ -543,9 +538,10 @@ img {
     text-transform: uppercase;
 }
 
-.site-title, h1, h2, h3 {
-    text-transform: capitalize;
-    font-weight: 1.1;
+.site-title, h1, h2, h3, .modelNameBook {
+    font-family: 'Open Sans', sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 700;
     letter-spacing: 0.02em;
 }
 
@@ -567,7 +563,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     text-transform: uppercase;
     color: var(--color-title);
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.825rem;
 }
 
 .footer-column a,
@@ -618,7 +614,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0;
     transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -636,9 +632,18 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 
 .model-card {
     position: relative;
-    aspect-ratio: 2 / 3;
-    overflow: hidden;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.model-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 3; /* Maintain aspect ratio for the image */
+    overflow: hidden;
 }
 
 .model-card img {
@@ -658,16 +663,16 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.9) 100%);
+    background: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: opacity 0.5s ease;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 1.5rem;
     text-align: center;
-    pointer-events: none; /* Permite que los clics lleguen al enlace <a> subyacente */
+    pointer-events: none;
 }
 
 .model-card:hover .model-card-overlay {
@@ -691,15 +696,13 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 }
 
 .model-card-name {
-    color: white;
-    font-size: 1.25rem;
-    font-weight: 700;
-    transform: translateY(15px);
-    transition: transform 0.4s ease;
-}
-
-.model-card:hover .model-card-name {
-    transform: translateY(0);
+    color: var(--color-text);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0.5rem; /* Space between image and name */
+    padding-bottom: 1rem; /* Add padding below the name */
+    width: 100%;
 }
 
 /* --- PÁGINA DE PORTAFOLIO --- */
@@ -709,7 +712,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 }
 
 .portfolio-name {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: normal;
     text-transform: capitalize;
     letter-spacing: 0.05em;
@@ -894,7 +897,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0;
     transform: translateY(20px) rotateX(10deg);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -908,20 +911,21 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 
 /* New styles for Portfolio Page Carousel */
 .portfolio-main .modelNameBook {
+    font-family: 'Open Sans', sans-serif !important;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.875rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-weight: 700; /* Applied bold font weight */
 }
 
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 600px; /* Adjust as needed */
+    max-width: 360px; /* Reduced by 40% from 600px */
     margin: 0 auto 3rem auto;
     aspect-ratio: 2 / 3; /* Portrait orientation */
-    overflow: hidden;
 }
 
 .carousel-images {
@@ -979,11 +983,11 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 }
 
 .carousel-button.prev {
-    left: 10px;
+    left: -50px;
 }
 
 .carousel-button.next {
-    right: 10px;
+    right: -50px;
 }
 
 .model-details-container {
@@ -996,7 +1000,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 }
 
 .model-details-container h2 {
-    font-size: 1.4rem;
+    font-size: 1.05rem;
     margin-bottom: 2rem;
     text-align: center;
     color: var(--color-text-light);
@@ -1007,12 +1011,14 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-wrap: nowrap;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     margin: 0 auto;
+    overflow-x: auto;
+    padding-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -1032,6 +1038,15 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     white-space: nowrap;
+    transition: transform 0.2s ease;
+}
+
+.modelBookMeasurements .measurement-item:not(.non-convertible) {
+    cursor: pointer;
+}
+
+.modelBookMeasurements .measurement-item:not(.non-convertible):hover {
+    transform: scale(1.05);
 }
 
 .modelBookMeasurements .measurementName {
@@ -1115,7 +1130,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     }
 
     .portfolio-main .modelNameBook {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .carousel-container {
@@ -1127,7 +1142,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     }
 
     .model-details-container h2 {
-        font-size: 1.5rem;
+        font-size: 1.125rem;
     }
 
     .modelBookMeasurements {

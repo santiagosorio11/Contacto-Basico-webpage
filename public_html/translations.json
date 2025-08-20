@@ -88,9 +88,10 @@
     "detail_bust": "Busto",
     "detail_waist": "Cintura",
     "detail_hips": "Caderas",
-    "detail_shoes": "Zapatos",
+    "detail_shoe": "Zapatos",
     "detail_hair": "Cabello",
     "detail_eyes": "Ojos",
-    "detail_suit": "Traje"
+    "detail_suit": "Traje",
+    "detail_chest": "Pecho"
   }
 }

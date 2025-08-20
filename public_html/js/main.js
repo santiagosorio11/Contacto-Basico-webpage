@@ -75,12 +75,23 @@ async function loadGridPage(category) {
             const card = document.createElement('a');
             card.href = `portfolio.html?id=${model.id}`;
             card.className = 'model-card';
+
+            const detailsHtml = Object.entries(model.details).map(([key, value]) => {
+                const translationKey = `detail_${key.toLowerCase()}`;
+                const translatedLabel = translations[currentLang][translationKey] || key;
+                let displayValue = value;
+                if (value.includes(' - ')) {
+                    displayValue = value.split(' - ')[0].trim();
+                }
+                return `<p>${translatedLabel.toUpperCase()}: ${displayValue}</p>`;
+            }).join('');
+
             card.innerHTML = `
                 <div class="model-image-wrapper">
                     <img src="${model.thumbnailUrl}" alt="${model.name}" loading="lazy">
                     <div class="model-card-overlay">
                         <div class="model-details">
-                            ${Object.entries(model.details).map(([key, value]) => `<p>${key}: ${value}</p>`).join('')}
+                            ${detailsHtml}
                         </div>
                     </div>
                 </div>
@@ -117,13 +128,21 @@ async function loadPortfolioPage() {
     }
 
     try {
-        console.log("Fetching models.json...");
-        const response = await fetch('../models/models.json');
-        console.log("Fetch response status:", response.status);
-        if (!response.ok) throw new Error('Network response was not ok');
+        console.log("Fetching models.json and translations.json...");
+        const [modelsResponse, translationsResponse] = await Promise.all([
+            fetch('../models/models.json'),
+            fetch('../translations.json')
+        ]);
+
+        if (!modelsResponse.ok || !translationsResponse.ok) {
+            throw new Error('Network response was not ok');
+        }
         
-        const data = await response.json();
-        console.log("Successfully parsed models.json");
+        const [data, translations] = await Promise.all([
+            modelsResponse.json(),
+            translationsResponse.json()
+        ]);
+        console.log("Successfully parsed models.json and translations.json");
 
         const model = data.models.find(m => m.id === modelId);
         console.log("Found model:", model);
@@ -145,13 +164,50 @@ async function loadPortfolioPage() {
         const measurementsList = document.querySelector('.modelBookMeasurements');
         if (measurementsList) {
             measurementsList.innerHTML = ''; // Clear existing placeholders
+            const currentLang = localStorage.getItem('preferred_language') || detectLanguage();
+
             for (const key in model.details) {
+                const value = model.details[key];
                 const measurementItem = document.createElement('div');
                 measurementItem.classList.add('measurement-item');
-                measurementItem.innerHTML = `
-                    <span class="measurementName">${key}:</span>
-                    <span class="measurements">${model.details[key]}</span>
-                `;
+
+                const nameSpan = document.createElement('span');
+                nameSpan.className = 'measurementName';
+                const translationKey = `detail_${key.toLowerCase()}`;
+                const translatedLabel = translations[currentLang][translationKey] || key;
+                nameSpan.textContent = `${translatedLabel}: `;
+
+                const valueSpan = document.createElement('span');
+                valueSpan.className = 'measurements';
+
+                if (value.includes(' - ')) {
+                    const parts = value.split(' - ');
+                    const metricValue = parts[0].trim();
+                    const imperialValue = parts[1].trim();
+
+                    measurementItem.dataset.metric = metricValue;
+                    measurementItem.dataset.imperial = imperialValue;
+                    measurementItem.dataset.unitSystem = 'metric'; // Start with metric
+                    
+                    valueSpan.textContent = metricValue;
+
+                    measurementItem.addEventListener('click', () => {
+                        const currentSystem = measurementItem.dataset.unitSystem;
+                        if (currentSystem === 'metric') {
+                            valueSpan.textContent = measurementItem.dataset.imperial;
+                            measurementItem.dataset.unitSystem = 'imperial';
+                        } else {
+                            valueSpan.textContent = measurementItem.dataset.metric;
+                            measurementItem.dataset.unitSystem = 'metric';
+                        }
+                    });
+                } else {
+                    valueSpan.textContent = value;
+                    measurementItem.classList.add('non-convertible');
+                }
+
+                measurementItem.appendChild(nameSpan);
+                measurementItem.appendChild(valueSpan);
                 measurementsList.appendChild(measurementItem);
             }
         }
@@ -205,6 +261,19 @@ async function loadPortfolioPage() {
 
         } else if (carouselImagesContainer) {
             carouselImagesContainer.innerHTML = '<p>No portfolio images available.</p>';
+        }
+
+        // Populate image gallery
+        const galleryContainer = document.getElementById('portfolio-gallery');
+        if (galleryContainer && model.portfolioImages && model.portfolioImages.length > 0) {
+            galleryContainer.innerHTML = ''; // Clear existing images
+            model.portfolioImages.forEach(imageUrl => {
+                const img = document.createElement('img');
+                img.src = imageUrl;
+                img.alt = model.name;
+                img.loading = 'lazy';
+                galleryContainer.appendChild(img);
+            });
         }
 
         console.log("Portfolio page built successfully");

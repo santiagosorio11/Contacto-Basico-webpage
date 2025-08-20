@@ -1,0 +1,19 @@
+# --- CABECERAS DE SEGURIDAD ---
+
+<IfModule mod_headers.c>
+  # Prevenir Clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+  
+  # Prevenir que el navegador adivine el tipo de contenido
+  Header always set X-Content-Type-Options "nosniff"
+  
+  # Política de Seguridad de Contenido (CSP) - ¡CONFIGURAR CUIDADOSAMENTE!
+  # Esta es una política restrictiva. El usuario debe añadir las URLs de sus fuentes (Google Fonts, CDNs, etc.)
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' https:; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:;"
+
+  # Habilitar XSS protection en navegadores antiguos
+  Header set X-XSS-Protection "1; mode=block"
+  
+  # Referrer Policy
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
